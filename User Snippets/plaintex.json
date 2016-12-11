@@ -1,0 +1,130 @@
+{
+/*
+	 // Place your snippets for Plain Text here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+	"UML File Setup": {
+		"prefix": "umlFileSetup",
+		"body": [
+			"@startuml ",
+			"title $1",
+			"",
+			"$2",
+			"",
+			"!includeurl https://raw.githubusercontent.com/matthewjosephtaylor/plantuml-style/master/style.pu",
+			"@enduml",
+			""
+		],
+		"description": "Starting point"
+	},
+	"UML File Setup Component": {
+		"prefix": "umlFileSetupComponent",
+		"body": [
+			"@startuml ",
+			"title $1",
+			"skinparam componentStyle uml2",
+			"",
+			"$2",
+			"",
+			"!includeurl https://raw.githubusercontent.com/matthewjosephtaylor/plantuml-style/master/style.pu",
+			"@enduml",
+			""
+		],
+		"description": "Starting point for Component"
+	},
+	"UML Use Case": {
+		"prefix": "umlUsecase",
+		"body": [
+			"usecase ($1) as $2"
+		],
+		"description": "Use Case"
+	},
+	"UML Use Actor": {
+		"prefix": "umlActor",
+		"body": [
+			"actor \"$1\" as $2 << $3 >>"
+		],
+		"description": "Use Case, Sequence"
+	},
+	"UML Note": {
+		"prefix": "umlNote",
+		"body": [
+			"note $1 of $2",
+			"  $3",
+			"end note"
+		],
+		"description": "Use Case, Sequence, Component, State \n	right, left, over, top, bottom"
+	},
+
+	"UML State": {
+		"prefix": "umlState",
+		"body": [
+			"state \"$1\" as $2 {",
+			"  $3",
+			"}"
+		],
+		"description": "PlantUml State UML"
+	},
+
+	"UML Sequence Participant": {
+		"prefix": "umlParticipant",
+		"body": [
+			"participant \"$1\" as $2"
+		]
+	},
+	"UML Sequence Message": {
+		"prefix": "umlSequenceMessage",
+		"body": [
+			"$1 -> $2 : $3",
+			"  $2 --> $1 : $4"
+		]
+	},
+	"UML Component Component": {
+		"prefix": "umlComponent",
+		"body": [
+			"component [$1] as $2"
+		]
+	},
+	"UML Component Package": {
+		"prefix": "umlPackage",
+		"body": [
+			"package \"$1\" as $2 {",
+			"  $3",
+			"}"
+		]
+	},
+	"UML Component Database": {
+		"prefix": "umlDb",
+		"body": [
+			"database \"$1\" as $2 {",
+			"  $3",
+			"}"
+		]
+	},
+	"UML Component Node": {
+		"prefix": "umlNode",
+		"body": [
+			"node \"$1\" as $2 {",
+			"  $3",
+			"}"
+		]
+	},
+	"UML Component Cloud": {
+		"prefix": "umlCloud",
+		"body": [
+			"cloud \"$1\" as $2 {",
+			"  $3",
+			"}"
+		]
+	}
+}
