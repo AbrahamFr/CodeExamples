@@ -1,0 +1,5 @@
+@each $num in one, two, three, four, five, six, seven, eight, nine, ten, eleven {
+  &.placeholder-#{$num} {
+    background: black center center no-repeat;
+  }
+}
