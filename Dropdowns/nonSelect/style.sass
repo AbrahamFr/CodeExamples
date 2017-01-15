@@ -1,0 +1,62 @@
+.magic-mouse-leave-off
+  display: block
+.magic-mouse-leave-on
+  display: block
+  height: 120px
+  width: 100px
+  position: absolute
+  z-index: 11
+  margin-top: 30px
+  cursor: default
+.email-option-wrapper
+  display: flex
+  margin-right: auto
+  text-decoration: none
+  color: $white
+  font-weight: 300
+  font-size: 16px
+  border: 1px solid $white
+  border-radius: 18px
+  background: rgba($primary-blue, .9) url('assets/images/drop-arrow-white.svg') no-repeat 91% 12px
+  background-size: 10px
+  min-width: 90px
+  max-height: 1px
+  padding: 2px 5px 2px 5px
+  overflow: hidden
+  min-height: 30px
+  transition: all 0.15s ease-out
+  z-index: 10
+  .search-type-selector
+    width: 100%
+    display: block
+    li
+      margin-bottom: 5px
+      font-size: 13px
+      font-weight: 400
+      display: block
+      width: 100%
+      border-radius: 6px
+      a
+        color: $white
+        text-decoration: none
+        text-transform: capitalize
+        cursor: pointer
+        display: block
+        padding-left: 8px
+      &:first-child
+        &:hover
+          cursor: default
+          a
+            cursor: default
+            color: $white
+      &:last-child
+        margin-bottom: 2px
+      &:hover
+        background: rgba(0,0,0,.09)
+  &:hover
+    border-radius: 12px
+    height: auto
+    max-height: 230px
+    box-shadow: 0 3px 5px rgba(0,0,0,.08)
+    overflow-y: scroll
+    overflow-x: hidden

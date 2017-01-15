@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Dropdown as UL</title>
+  <script>
+    var scrollToTop = function (e) {
+      e.currentTarget.scrollTop = 0
+    }
+    var preventDefaultOnParentScroll = function () {}
+  </script>
+</head>
+<body>
+  <div on-wheel="preventDefaultOnParentScroll"  on-mouse-leave="scrollToTop(this)">
+    <ul>
+      <li></li>
+    </ul>
+  </div>
+  <select name="standard-dropdown" id="standard-dropdown">
+    <option value="1">One</option>
+    <option value="2" selected="true">Two</option>
+    <option value="3">Three</option>
+    <option value="4">Four</option>
+  </select>
+</body>
