@@ -14,6 +14,11 @@
 
 .header {
   grid-column: 1 / -1;
+  display: flex;
+}
+
+.header > div:nth-child(3) {
+  margin-left: auto;
 }
 
 .menu {
