@@ -8,5 +8,4 @@ async def init() -> None:
         init_db(db)
         
 if __name__ == "__main__":
-    main()
     asyncio.run(main())
