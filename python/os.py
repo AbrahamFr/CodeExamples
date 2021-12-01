@@ -12,3 +12,6 @@ from pydantic.tools import parse_obj_as
 def get_machine_id() -> UUID:
     machine_id = os.popen("cat /etc/machine-id").read().strip()
     return uuid.UUID(machine_id)
+
+class NeedMachineID():
+    device_id: UUID = Field(default=get_machine_id(), alias="deviceId")
