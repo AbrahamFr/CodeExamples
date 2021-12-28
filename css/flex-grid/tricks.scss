@@ -1,0 +1,17 @@
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
+
+  > * {
+    display: grid;
+  }
+}
+
+@for $i from 1 through 4 {
+  [data-grid*="col-#{$i}"] {
+    grid-column: span #{$i};
+  }
+}
